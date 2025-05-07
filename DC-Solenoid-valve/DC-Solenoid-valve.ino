@@ -2,14 +2,16 @@
  * Componente: Valvula solenoide DC
  * Autora: Giulianna Torres Campodónico
  ********************************************************/
-
+int SolenoidPin= 3 // output pin we are using 
 
 void setup() {
-  // put your setup code here, to run once:
-
+  pinMode(SolenoidPin, OUTPUT); // configures the pin as an output  
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  digitalWrite(SolenoidPin, HIGH); // solenoid opens
+  delay(5000);
+  digitalWrite(SolenoidPin, LOW); // solenoid closes
+  delay(5000);
 
 }
