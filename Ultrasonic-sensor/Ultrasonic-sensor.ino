@@ -26,7 +26,7 @@ void loop() {
 
   Serial.print("La distancia es:");
   Serial.print(distance); // prints the distance value in the serial monitor
-  delay(500); // 
+  delay(500);
 
   
 
