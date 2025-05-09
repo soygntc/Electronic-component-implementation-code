@@ -5,14 +5,14 @@
 
 const pinSensor = 2; // this is the input pin on the Arduino
 volatile int pulses = 0; // its declared as volatile so that the ISR and the main program are used correctly
-unsigned long preTime = 0; / sensor pulses counter
+unsigned long preTime = 0; // sensor pulses counter
 
 float caudal = 0;
 
 void setup() {
   Serial.begin(9600);
   pinMode(pinSensor, INPUT); // sets the pin as an input
-  attachInterrupt(digitalPinToInterrupt(pinSensor), countingPulses, RISING);
+  attachInterrupt(digitalPinToInterrupt(pinSensor), countingPulses, RISING); // an interrupt is used to make the reading of the rotating encoding
 }
 
 void loop() {
