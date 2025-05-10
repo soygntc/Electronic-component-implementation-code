@@ -6,7 +6,7 @@
 #include <Adafruit_SSD1306.h>
 #include <SPI.h>
 
-// Pin definitions for SPI
+// pin definitions for SPI
 #define OLED_MOSI   11
 #define OLED_CLK    13
 #define OLED_DC     9
@@ -25,14 +25,14 @@ void setup() {
     while (true); //  // initialize the OLED display and stop if display not found
   }
 
-  display.clearDisplay();               // Clear the screen
-  display.setTextSize(1);               // Set text size (1 to 3)
-  display.setTextColor(SSD1306_WHITE);  // Set text color
-  display.setCursor(0, 0);              // Set cursor position (x, y)
-  display.println("Hello, world!");     // Text to display
-  display.display();                    // Update the screen
+  display.clearDisplay();               // clear the screen
+  display.setTextSize(1);               // set text size (1 to 3)
+  display.setTextColor(SSD1306_WHITE);  // set text color
+  display.setCursor(0, 0);              // set cursor position (x, y)
+  display.println("Hello, world!");     // text to display
+  display.display();                    // update the screen
 }
 
 void loop() {
-  // Your SPI display code goes here
+  // your SPI display code goes here
 }
