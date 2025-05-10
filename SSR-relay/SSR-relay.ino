@@ -2,12 +2,23 @@
  * Componente: Relay SSR
  * Autora: Giulianna Torres Campodónico
  ********************************************************/
+
+int relayPin= 2;
+
 void setup() {
-  // put your setup code here, to run once:
+  pinMode(relayPin, OUTPUT); // configures an specific pin
+
+  /* use if the SSR is required to be activated only once (temporized relay):
+  digitalWrite(relayPin, HIGH);
+  delay(5000);
+  digitalWrite(relayPin, LOW); */
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  digitalWrite(relayPin, HIGH); // turn on SSR
+  delay(5000);
+  digitalWrite(relayPin, LOW); // turn off SSR
+  delay(3000);
+  
 }
